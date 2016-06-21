@@ -32,7 +32,7 @@ class AddPostVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
     }
     
     @IBAction func addPicturePressed(sender: UIButton!) {
-        sender.setTitle("", forState: .Normal)
+//        sender.setTitle("", forState: .Normal)
         presentViewController(imagePicker, animated: true, completion: nil)
     }
     
@@ -40,6 +40,11 @@ class AddPostVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
     @IBAction func makePostButtonPressed(sender: UIButton) {
         if let title = titleField.text, let desc = descField.text, let img = postImage.image {
             
+            let imagePath = DataService.instance.saveImageAndCreatePath(img)
+            
+            let post = Post(imagePath: imagePath, title: title, description: desc)
+            DataService.instance.addPost(post)
+            dismissViewControllerAnimated(true, completion: nil)
         }
     }
     

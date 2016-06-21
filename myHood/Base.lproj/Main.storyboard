@@ -201,13 +201,6 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jEQ-RS-fw1">
-                                <rect key="frame" x="200" y="84" width="200" height="200"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="R22-FO-6h1"/>
-                                    <constraint firstAttribute="width" constant="200" id="npF-Mu-6Dl"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dJH-rL-GyN" userLabel="addPicButton">
                                 <rect key="frame" x="200" y="84" width="200" height="200"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="27"/>
@@ -218,6 +211,13 @@
                                     <action selector="addPicturePressed:" destination="SiN-VU-pcR" eventType="touchUpInside" id="2mH-bz-BLL"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jEQ-RS-fw1">
+                                <rect key="frame" x="200" y="84" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="R22-FO-6h1"/>
+                                    <constraint firstAttribute="width" constant="200" id="npF-Mu-6Dl"/>
+                                </constraints>
+                            </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F6U-Ka-yCU" userLabel="titleField">
                                 <rect key="frame" x="20" y="299" width="560" height="40"/>
                                 <constraints>
