@@ -201,14 +201,86 @@
                                     </mask>
                                 </variation>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jEQ-RS-fw1">
+                                <rect key="frame" x="200" y="84" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="R22-FO-6h1"/>
+                                    <constraint firstAttribute="width" constant="200" id="npF-Mu-6Dl"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dJH-rL-GyN" userLabel="addPicButton">
+                                <rect key="frame" x="200" y="84" width="200" height="200"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="27"/>
+                                <state key="normal" title="Add a picture!">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addPicturePressed:" destination="SiN-VU-pcR" eventType="touchUpInside" id="2mH-bz-BLL"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F6U-Ka-yCU" userLabel="titleField">
+                                <rect key="frame" x="20" y="299" width="560" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="rGm-mn-D2o"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a description" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="GTt-qO-tnb" userLabel="descField">
+                                <rect key="frame" x="20" y="354" width="560" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="PaV-3B-uTe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="236-W4-g69">
+                                <rect key="frame" x="20" y="541" width="560" height="50"/>
+                                <color key="backgroundColor" red="0.38521642080159035" green="0.43338154260915474" blue="0.7730933370044053" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="cgh-JC-6fJ"/>
+                                </constraints>
+                                <state key="normal" title="Make Post">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="makePostButtonPressed:" destination="SiN-VU-pcR" eventType="touchUpInside" id="9En-56-y2k"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="jEQ-RS-fw1" firstAttribute="centerY" secondItem="dJH-rL-GyN" secondAttribute="centerY" id="0Hb-VA-4jT"/>
+                            <constraint firstItem="F6U-Ka-yCU" firstAttribute="top" secondItem="dJH-rL-GyN" secondAttribute="bottom" constant="15" id="14N-PQ-Lgt"/>
+                            <constraint firstItem="F6U-Ka-yCU" firstAttribute="leading" secondItem="mCX-xX-ENg" secondAttribute="leadingMargin" id="9Eh-Vk-Q9u"/>
+                            <constraint firstItem="jEQ-RS-fw1" firstAttribute="height" secondItem="dJH-rL-GyN" secondAttribute="height" id="Acc-cC-cCI"/>
+                            <constraint firstItem="jEQ-RS-fw1" firstAttribute="top" secondItem="L82-28-5I9" secondAttribute="bottom" constant="18" id="BKi-dw-FtH"/>
                             <constraint firstItem="L82-28-5I9" firstAttribute="leading" secondItem="mCX-xX-ENg" secondAttribute="leading" id="FGZ-Cx-VWi"/>
+                            <constraint firstItem="w89-Yl-OXU" firstAttribute="top" secondItem="236-W4-g69" secondAttribute="bottom" constant="9" id="Goh-ed-gxb"/>
+                            <constraint firstItem="GTt-qO-tnb" firstAttribute="top" secondItem="F6U-Ka-yCU" secondAttribute="bottom" constant="15" id="II9-Nh-baH"/>
                             <constraint firstItem="L82-28-5I9" firstAttribute="top" secondItem="mCX-xX-ENg" secondAttribute="top" id="MqJ-nb-oB6"/>
+                            <constraint firstItem="F6U-Ka-yCU" firstAttribute="trailing" secondItem="mCX-xX-ENg" secondAttribute="trailingMargin" id="QX7-uj-rPw"/>
+                            <constraint firstItem="jEQ-RS-fw1" firstAttribute="width" secondItem="dJH-rL-GyN" secondAttribute="width" id="STQ-6a-PgF"/>
+                            <constraint firstItem="236-W4-g69" firstAttribute="top" secondItem="GTt-qO-tnb" secondAttribute="bottom" constant="19" id="VIe-HG-oqC"/>
+                            <constraint firstItem="236-W4-g69" firstAttribute="leading" secondItem="mCX-xX-ENg" secondAttribute="leadingMargin" id="eR2-Vp-8g1"/>
+                            <constraint firstItem="236-W4-g69" firstAttribute="trailing" secondItem="mCX-xX-ENg" secondAttribute="trailingMargin" id="khc-ST-mcU"/>
+                            <constraint firstItem="GTt-qO-tnb" firstAttribute="leading" secondItem="mCX-xX-ENg" secondAttribute="leadingMargin" id="q20-bX-7GA"/>
+                            <constraint firstItem="GTt-qO-tnb" firstAttribute="trailing" secondItem="mCX-xX-ENg" secondAttribute="trailingMargin" id="uY8-hZ-8lX"/>
                             <constraint firstAttribute="trailing" secondItem="L82-28-5I9" secondAttribute="trailing" id="veY-6n-oLW"/>
+                            <constraint firstItem="jEQ-RS-fw1" firstAttribute="centerX" secondItem="mCX-xX-ENg" secondAttribute="centerX" id="wLR-SM-GRV"/>
+                            <constraint firstItem="jEQ-RS-fw1" firstAttribute="centerX" secondItem="dJH-rL-GyN" secondAttribute="centerX" id="zIR-bB-AVk"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="VIe-HG-oqC"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="descField" destination="GTt-qO-tnb" id="Ew5-GN-oWK"/>
+                        <outlet property="postImage" destination="jEQ-RS-fw1" id="LZa-1m-lgP"/>
+                        <outlet property="titleField" destination="F6U-Ka-yCU" id="ygV-RC-0of"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XaR-9v-kzb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

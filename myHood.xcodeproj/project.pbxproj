@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		80198A481D18BE6E003DCD15 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80198A471D18BE6E003DCD15 /* DataService.swift */; };
 		804103461D14CDAF00D18129 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804103451D14CDAF00D18129 /* AppDelegate.swift */; };
 		804103481D14CDAF00D18129 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804103471D14CDAF00D18129 /* ViewController.swift */; };
 		8041034B1D14CDAF00D18129 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 804103491D14CDAF00D18129 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		80198A471D18BE6E003DCD15 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		804103421D14CDAF00D18129 /* myHood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myHood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		804103451D14CDAF00D18129 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		804103471D14CDAF00D18129 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		80198A461D18BE5F003DCD15 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				80198A471D18BE6E003DCD15 /* DataService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		804103391D14CDAF00D18129 = {
 			isa = PBXGroup;
 			children = (
@@ -60,9 +70,10 @@
 		804103441D14CDAF00D18129 /* myHood */ = {
 			isa = PBXGroup;
 			children = (
-				804103591D14CE9000D18129 /* Controller */,
-				804103581D14CE8300D18129 /* View */,
+				80198A461D18BE5F003DCD15 /* Services */,
 				804103571D14CE7F00D18129 /* Model */,
+				804103581D14CE8300D18129 /* View */,
+				804103591D14CE9000D18129 /* Controller */,
 				804103451D14CDAF00D18129 /* AppDelegate.swift */,
 				8041034C1D14CDAF00D18129 /* Assets.xcassets */,
 				804103511D14CDAF00D18129 /* Info.plist */,
@@ -172,6 +183,7 @@
 				806ECBB61D1517C7000D7BD0 /* PostCell.swift in Sources */,
 				806ECBB41D151150000D7BD0 /* Post.swift in Sources */,
 				806ECBB81D151E46000D7BD0 /* AddPostVC.swift in Sources */,
+				80198A481D18BE6E003DCD15 /* DataService.swift in Sources */,
 				804103481D14CDAF00D18129 /* ViewController.swift in Sources */,
 				804103461D14CDAF00D18129 /* AppDelegate.swift in Sources */,
 			);
